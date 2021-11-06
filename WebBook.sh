@@ -92,13 +92,14 @@ setmodevar() {
 
 moderunner() {
 	printf "Entered Mode runner\n"
-	printf "Mode Runner Arc $@\n"
+	printf "Mode Runner Arg $@\n"
 	if [ $WEBOOK_MODE_VAR != $WEBOOK_MODE_VAR_DEF ]; then
 		case $WEBOOK_MODE_VAR_TYPE in
 			"") ;;
 			SUB)
 				link=$(sed -n "s/SUB $WEBOOK_MODE_VAR//p" $FILE | sed "s,{},$@,g")
-				FF $link
+				printf "Mode runner link $link \n"
+				FF "$link"
 				;;
 			EXE)
 				$WEBOOK_MODE_VAR $1
@@ -109,7 +110,7 @@ moderunner() {
 }
 
 OpDecode() {
-	printf "OpDecode \$1 == $1, \$2 == $2\n"
+	printf "\nOpDecode \$1 == $1, \$2 == $2\n"
 	if [ "$1" == "" ]; then
 		moderunner "$2"
 	else

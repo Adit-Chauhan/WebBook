@@ -6,7 +6,7 @@ WEBOOK_MODE_VAR_TYPE=""
 WEBOOK_MODE_VAR_DEF="NOARGOMG"
 FF() {
 	printf "Running firefox $@\n"
-	firefox $@ &
+	chromium $@ &
 	disown
 }
 
@@ -16,20 +16,6 @@ roof() {
 		echo $RofiOut
 	fi
 
-}
-
-rofied() {
-	printf "\n\nIn Rofied\n"
-	printf $(echo "$@" | awk -F'::' '{print $1}')
-	printf "\n"
-	RofiOut=$(echo "$@" | awk -F'::' '{print $1}' | rofi -dmenu)
-	if [ "$RofiOut" == "" ]; then
-		echo "Quitting"
-		kill -9 $$
-		exit 1
-	else
-		echo $RofiOut
-	fi
 }
 
 filterSection() {
@@ -68,7 +54,7 @@ CUSTOM() {
 }
 
 fallback_func() {
-	rofied "Function\nNot\nDefined"
+	roof "Function\nNot\nDefined"
 	main
 }
 

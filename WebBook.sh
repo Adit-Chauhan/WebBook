@@ -12,10 +12,7 @@ FF() {
 
 roof() {
 	RofiOut=$(echo "$@" | rofi -dmenu)
-	if [ "$RofiOut" == "" ]; then
-		echo "Quitting"
-		exit 1
-	else
+	if [ "$RofiOut" != "" ]; then
 		echo $RofiOut
 	fi
 

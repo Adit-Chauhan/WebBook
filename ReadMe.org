@@ -15,7 +15,7 @@ The bookmarks file is stored in ~/.local/share/bookmarks.bmk
 
 *** Bookmark Entry
 + Bookmark Entry is done in following format
-  + KEY \:: ARGS
+  + KEY ‎:: ARGS
 **** KEY
 + A KEY value should be unique to a section but same value can be used in other sections of file.
 + KEY can Contain Spaces and other characters but not "::".

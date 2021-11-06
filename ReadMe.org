@@ -1,0 +1,42 @@
+* WebBook
+-----
+This is a custom script to create browser bookmarks and using them using rofi, for my personal use
+
+** Bookmarks file
+The bookmarks file is in the following format
+The bookmarks file is stored in ~/.local/share/bookmarks.bmk
+  - This can be changed by modifying FILE Variable in script.
+
+*** Section
++ "|" is used to denote a section in bookmarks file
++ Rofi will display entire section and only that section at a particular instance
++ HOME section is necessary for the code to function
++ *Section Commands*: These are special commands that are executed when prompt gets the arguments that are not stored in bookmarks. for example it can be used to execute search in particular site. These are denoted by using '[<Command Name>]' after setting the Section name
+
+*** Bookmark Entry
++ Bookmark Entry is done in following format
+  + KEY :: ARGS
+**** KEY
++ A KEY value should be unique to a section but same value can be used in other sections of file.
++ KEY can Contain Spaces and other characters but not "::".
+**** ARGS
+ARGS can be of the following Types
++ ARGS starting in '"', these type of arguments will be considered URL and will be directly sent to the browser command.
++ ARGS in RUN <Site Name> format, will behave in the same way as above but '"' are not required for this.
++ ARGS in JUMP <Section Name> format, will load the section name specified
++ ARGS in <Custom Function> <Argument> format, will load the Substitution command along with the argument.
+
+*** Custom Commands
+Custom command can be declared anywhere in the file but preferable in a separate section or at the top to avoid them showing up in rofi displays.
+The Custom Command are of Two Types
+**** SUB - Substitution command
+This command is used to send a single argument and substitute it in a particular location in a string.
+"{}" are used to denote the substitute location in the string.
+The command format is:
+    SUB <Command Name> <String>
+Ex. SUB REDDIT reddit.com/r/{}
+
+**** EXE - Executable command
+This command takes a path to an executable file and the file with the given arguments.
+*This only works for Section Commands*
+Format: EXE <Command Name> <Path>

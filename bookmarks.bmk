@@ -1,0 +1,131 @@
+| Home
+Firefox  :: RUN
+YouTube  :: "https://youtube.com"
+Youtube+ :: JUMP YT+
+Reddit :: "https://www.reddit.com/"
+Reddit+ :: JUMP REDDIT
+Manga :: JUMP MANGA
+Anime :: JUMP ANIME
+WhatsApp :: "https://web.whatsapp.com/"
+Aternos :: "https://aternos.org/servers/"
+
+| YT+ [YSEARCH]
+LTT :: YTC LinusTechTips
+LTT+ :: JUMP LTT
+MineCraft :: JUMP MC
+Educational :: JUMP EDU
+OnePiece :: JUMP OP
+Programming :: JUMP PROG
+Theorist :: JUMP THEO
+Linux :: JUMP LINUX
+
+
+| LTT
+ShortCircuit ::"https://www.youtube.com/channel/UCdBK94H6oZT2Q7l0-b0xmMg"
+Tech Quickie :: "https://www.youtube.com/user/Techquickie"
+Tech Linked :: "https://www.youtube.com/channel/UCeeFfhMcJa1kjtfZAGskOCA"
+LMG Clips :: "https://www.youtube.com/channel/UCFLFc8Lpbwt4jPtY1_Ai5yA"
+Rossman :: "https://www.youtube.com/user/rossmanngroup"
+Level1Tech :: YTC Level1Tech
+
+| MC
+Grian :: YTC Grian
+Mumbo :: YTC MumboJumboOfficial
+Pearl :: YTC PearlescentMoon
+Scar  :: YTC GoodTimesWithScar
+Cleo  :: YTC ZombieCleo
+Mango :: YTC ilmango
+
+| EDU
+Other ::JUMP EDUOTHER
+PCB ::JUMP PCB
+TECH ::JUMP EDUTECH
+TED ::JUMP TED
+MATHS ::JUMP MATHS
+
+| EDUOTHER
+CrashCourse :: YTC crashcourse
+RI :: YTC TheRoyalInstitution
+Veratasium :: YTC veritasium
+OverSimplified :: YTC OverSimplified
+Primer :: YTC PrimerLearning
+Stanford :: YTC stanford
+
+| PCB
+Asap :: YTC AsapSCIENCE
+MinuteEarth :: YTC minuteearth
+Eons :: YTC eons
+MinutePhysics :: "https://www.youtube.com/user/minutephysics"
+SciShow* :: YTC SciShow
+SpaceTime :: YTC pbsspacetime
+Primer :: YTC PrimerLearning
+
+| EDUTECH
+Ben Eater :: YTC BenEater
+Computerphile :: "https://www.youtube.com/user/Computerphile"
+Gary Explains :: YTC GaryExplains
+GreatScott :: YTC greatscottlab
+Mechatronics :: YTC HowToMechatronics
+Real Eng :: YTC RealEngineering
+
+| TED
+TED :: YTC TED
+TEDx :: "https://www.youtube.com/user/TEDxTalks"
+TED-ed :: "https://www.youtube.com/teded"
+
+| MATHS
+3B1B :: YTC 3blue1brown
+Numberphile :: "https://www.youtube.com/user/numberphile"
+StandupMaths :: "https://www.youtube.com/user/standupmaths"
+Mathologer :: YTC Mathologer
+
+| OP
+Grandline :: YTC GrandLineReview
+Ohara :: YTC Ohara-the-Fox
+Merphy :: "https://www.youtube.com/channel/UC7FW6FYqPLeQIXMSulBfOLw"
+YudeRon :: "https://www.youtube.com/channel/UChkqdomPKw0wYpgVecDhzQw"
+Arthur :: YTC TheLibraryofOhara
+Daniel :: YTC DanielGreeneReviews
+
+| PROG
+mCoding :: YTC mCodingWithJamesMurphy
+Fireship :: YTC Fireship
+Reducible :: YTC Reducible
+sentdex :: YTC sentdex
+freeCodeCamp :: YTC Freecodecamp
+Cherno :: YTC TheChernoProject
+Engineer\ Man :: YTC EngineerMan
+Rusty :: YTC LetsGetRusty
+
+| THEO
+Game :: YTC GameTheorists
+Food :: YTC FoodTheorists
+Movie :: YTC FilmTheorists
+
+| LINUX
+DistroTube :: YTC DistroTube
+Linux Experiment :: YTC TheLinuxExperiment
+
+| REDDIT [RSLASH]
+r/OnePiece :: RSLASH r/OnePiece
+r/Manga :: RSLASH r/manga
+r/Anime :: RSLASH r/anime
+
+| MANGA
+Manga Plus :: "https://mangaplus.shueisha.co.jp/updates"
+Mangadex :: "https://mangadex.org/"
+Batoto :: "https://bato.to/"
+Mangakakalot :: "https://mangakakalot.com/"
+
+| ANIME
+nyaa :: "https://nyaa.si/"
+subsplease :: "https://subsplease.org/"
+twist.moe :: "https://twist.moe/"
+MuseAsia :: YTC MuseAsia
+Ani-one :: YTC AniOneAsia
+Gogo :: "https://gogoanime.pe/"
+
+| Functions
+SUB YTC https://www.youtube.com/c/{}/videos
+SUB RSLASH https://www.reddit.com/{}/
+EXE YSEARCH /home/adit/.local/bin/Web/ysearch.sh

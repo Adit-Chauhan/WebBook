@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-FILE="$HOME/.config/bookmarks.conf"
+FILE="$HOME/.local/share/bookmarks.bmk"
 WEBOOK_MODE_VAR="NOARGOMG"
 WEBOOK_MODE_VAR_TYPE=""
 WEBOOK_MODE_VAR_DEF="NOARGOMG"

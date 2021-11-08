@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-#FILE="$HOME/.local/share/bookmarks.bmk"
-FILE="./bookmarks_sample.bmk"
+FILE="$HOME/.local/share/bookmarks.bmk"
+#FILE="./bookmarks_sample.bmk"
 WEBOOK_MODE_VAR="NOARGOMG"
 WEBOOK_MODE_VAR_TYPE=""
 WEBOOK_MODE_VAR_DEF="NOARGOMG"

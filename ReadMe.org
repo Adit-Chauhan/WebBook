@@ -10,7 +10,7 @@ The bookmarks file is stored in ~/.local/share/bookmarks.bmk
 *** Section
 + "|" is used to denote a section in bookmarks file
 + Rofi will display entire section and only that section at a particular instance
-+ HOME section is necessary for the code to function
++ Home section is necessary for the code to function
 + *Section Commands*: These are special commands that are executed when prompt gets the arguments that are not stored in bookmarks. for example it can be used to execute search in particular site. These are denoted by using '[<Command Name>]' after setting the Section name
 
 *** Bookmark Entry
@@ -40,3 +40,22 @@ Ex. SUB REDDIT reddit.com/r/{}
 This command takes a path to an executable file and the file with the given arguments.
 *This only works for Section Commands*
 Format: EXE <Command Name> <Path>
+
+*** Comments
+'#' can be used for Comments
+
+** Misc.
+*** ysearch code
+#+begin_src bash
+#!/bin/sh
+query=$(echo $@ | sed "s/ /+/g")
+chromium "https://www.youtube.com/results?search_query=$query" &
+disown
+#+end_src
+*** Dependencies
++ awk
++ sed
++ grep
++ Rofi
++ Web Browser (chromium)
+  + Browser can be modified in the FF function
